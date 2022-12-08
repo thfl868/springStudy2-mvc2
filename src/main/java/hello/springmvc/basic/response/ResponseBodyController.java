@@ -24,6 +24,7 @@ public class ResponseBodyController {
         response.getWriter().write("ok");
     }
 
+
     @GetMapping("/response-body-string-v2")
     public  ResponseEntity<String> responseBodyV2() {
         return new ResponseEntity<>("ok", HttpStatus.OK);
